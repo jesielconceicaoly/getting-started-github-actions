@@ -14,16 +14,19 @@ jobs:
         run: echo ""
   test:
     runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: Step 1 - Create a temporary artifact downloads folder
         run: echo ""
   sast:
     runs-on: ubuntu-latest
+    needs: test
     steps:
       - name: Step 1 - Create a temporary artifact downloads folder
         run: echo ""
   deploy-production:
     runs-on: ubuntu-latest
+    needs: test    
     steps:
       - name: Step 1 - Create a temporary artifact downloads folder
         run: echo ""
