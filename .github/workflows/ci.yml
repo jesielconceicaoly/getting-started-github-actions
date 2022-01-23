@@ -1,5 +1,5 @@
 # Publish GitHub workflow artifacts tutorial example
-name: Development
+name: CI
 
 on:
   push:
