@@ -1,5 +1,5 @@
 # Publish GitHub workflow artifacts tutorial example
-name: CI
+name: Development
 
 on:
   push:
@@ -23,16 +23,6 @@ jobs:
       - name: Step 1 - Create a temporary artifact downloads folder
         run: echo ""
   deploy-development:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Step 1 - Create a temporary artifact downloads folder
-        run: echo ""
-  deploy-staging:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Step 1 - Create a temporary artifact downloads folder
-        run: echo ""
-  deploy-production:
     runs-on: ubuntu-latest
     steps:
       - name: Step 1 - Create a temporary artifact downloads folder
